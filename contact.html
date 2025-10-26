@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Erick Owuor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/254792219336" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Email Float -->
+    <div class="email-float">
+        <a href="mailto:erickowuor38@gmail.com" class="email-link">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Erick Owuor</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Get in touch for inquiries, collaborations, or service requests</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Let's Start a Conversation</h2>
+                    <p>I'm always interested in new projects and opportunities. Whether you need IT solutions, writing services, or consulting, feel free to reach out.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Phone</h3>
+                                <p>0792219336</p>
+                                <button class="btn-call" onclick="makeCall()">Call Now</button>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>WhatsApp</h3>
+                                <p>0792219336</p>
+                                <button class="btn-whatsapp" onclick="openWhatsApp()">Chat on WhatsApp</button>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Email</h3>
+                                <p>erickowuor38@gmail.com</p>
+                                <button class="btn-email" onclick="openEmail()">Send Email</button>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Location</h3>
+                                <p>12 Pap-Onditi, Kenya</p>
+                                <button class="btn-location" onclick="openLocation()">View on Map</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h3>Business Hours</h3>
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <span>Monday - Friday</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Saturday</span>
+                                <span>9:00 AM - 2:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <h2>Send a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email *</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service">
+                                <option value="">Select a service</option>
+                                <option value="it">IT & Systems Administration</option>
+                                <option value="web">Programming & Web Development</option>
+                                <option value="data">Data Analysis & Visualization</option>
+                                <option value="writing">Writing & Research Services</option>
+                                <option value="cloud">Cloud Computing & Database Management</option>
+                                <option value="training">Training & Capacity Building</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn primary full-width">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Me Here</h2>
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Location Map</h3>
+                <p>12 Pap-Onditi, Kenya</p>
+                <button class="btn secondary" onclick="openLocation()">Open in Maps</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-contact">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What is your response time?</h3>
+                    <p>I typically respond to all inquiries within 24 hours. For urgent matters, please call or use WhatsApp for immediate assistance.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer free consultations?</h3>
+                    <p>Yes, I offer free initial consultations to discuss your project requirements and determine the best approach.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What are your payment terms?</h3>
+                    <p>Payment terms vary by project size. For small projects, full payment upfront. For larger projects, 50% upfront and 50% upon completion.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you work with international clients?</h3>
+                    <p>Absolutely! I work with clients worldwide and can accommodate different time zones as needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Erick Owuor</h3>
+                    <p>Professional IT & Writing Services</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">IT Solutions</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Writing Services</a></li>
+                        <li><a href="services.html">Data Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> 0792219336</p>
+                    <p><i class="fas fa-envelope"></i> erickowuor38@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 12 Pap-Onditi, Kenya</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Erick Owuor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="popup success">
+        <div class="popup-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Message Sent!</h2>
+            <p>Thank you for your message. I'll get back to you as soon as possible.</p>
+            <button class="btn primary" onclick="closeSuccessPopup()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
